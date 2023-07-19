@@ -10,7 +10,8 @@ img {
   max-height: 100%;
 }
 header,
-main {
+main,
+footer {
   max-width: 2023px;
   margin: 0 auto;
 }
@@ -22,22 +23,26 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-nav .img-logo {
+.img-logo,
+.footer-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-nav .img-logo img {
+.img-logo img,
+.footer-img-container img {
   height: 30px;
   width: 50px;
 }
-nav .img-logo h2 {
+.img-logo h2,
+.footer-img-container h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #0b0223;
 }
-nav .img-logo span {
+.img-logo span,
+.footer-img-container span {
   color: #ff42a5;
 }
 nav ul {
@@ -252,6 +257,39 @@ nav ul li .anchor {
   height: 50px;
   width: 50px;
 }
+.footer-container {
+  padding: 20px 50px;
+  background-color: #0b0223;
+}
+.footer-img-container h2 {
+  color: #fff;
+}
+.inportent-links {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.inportent-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.inportent-links ul li {
+  list-style: none;
+}
+.inportent-links ul li a {
+  text-decoration: none;
+  color: white;
+}
+.icon-font-size {
+  font-size: 30px;
+}
+.importent-praivacy-links {
+  font-weight: 400;
+  font-size: 12px;
+}
 
 /* Responsive Styles */
 
@@ -295,6 +333,14 @@ nav ul li .anchor {
     margin-right: 3px;
     height: 15px;
     width: 15px;
+  }
+  .inportent-links ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #inportent-praivacy-links ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
