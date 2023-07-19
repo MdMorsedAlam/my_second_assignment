@@ -9,9 +9,13 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
-headeer {
-  max-width: 1440px;
+header,
+main {
+  max-width: 2023px;
   margin: 0 auto;
+}
+section {
+  padding: 50px 0px;
 }
 nav {
   padding: 15px 50px;
@@ -115,12 +119,82 @@ nav ul li .anchor {
   margin-left: 10px;
 }
 
+.online-game-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0b0223;
+  text-align: center;
+}
+.online-game-title span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.online-game-description {
+  font-weight: 400;
+  text-align: center;
+  color: #534c64;
+  padding: 15px;
+}
+.online-game-container {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.img-container {
+  height: 100%;
+  width: 100%;
+}
+.img-container p {
+  font-weight: 500;
+  color: #534c64;
+  padding: 10px;
+}
+.hover-effect {
+  position: relative;
+}
+.overlay-content {
+  position: absolute;
+  height: 98%;
+  width: 99%;
+  top: 0;
+  left: 0;
+  background-color: rgb(19, 8, 8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s;
+  padding-bottom: 0px;
+  border-radius: 10px;
+}
+.overlay-content p {
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+.overlay-content img {
+  height: 30px;
+  width: 40px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.overlay-content:hover {
+  opacity: 0.8;
+  box-shadow: 5px 5px 8px rgb(19, 8, 8);
+}
+
 /* Responsive Styles */
 
 /* Responsive For Mobile Devices */
 @media screen and (max-width: 576px) {
   nav,
-  ul {
+  ul,
+  .online-game-container {
     flex-direction: column;
     text-align: center;
   }
@@ -137,7 +211,8 @@ nav ul li .anchor {
 /* Responsive For Tablet Devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   nav,
-  .banner-container {
+  .banner-container,
+  .online-game-container {
     flex-direction: column;
     text-align: center;
   }
