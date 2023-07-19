@@ -17,7 +17,6 @@ nav {
   padding: 15px 50px;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 }
 nav .img-logo {
   display: flex;
@@ -63,4 +62,30 @@ nav ul li .anchor {
   font-size: 1rem;
   font-weight: 500;
   color: #3c354f;
+}
+
+/* Responsive Styles */
+
+/* Responsive For Mobile Devices */
+@media screen and (max-width: 576px) {
+  nav,
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul li:last-child {
+    width: 180px;
+    margin: 0 auto;
+  }
+}
+
+/* Responsive For Tablet Devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    padding-top: 20px;
+  }
 }
