@@ -15,7 +15,7 @@ main {
   margin: 0 auto;
 }
 section {
-  padding: 50px 0px;
+  padding: 20px 0px;
 }
 nav {
   padding: 15px 50px;
@@ -86,7 +86,7 @@ nav ul li .anchor {
   color: #0b0223;
 }
 .banner-big-title {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 800;
   text-transform: uppercase;
   padding: 10px 0px;
@@ -187,21 +187,57 @@ nav ul li .anchor {
   opacity: 0.8;
   box-shadow: 5px 5px 8px rgb(19, 8, 8);
 }
+.play-instant-container {
+  padding: 0px 50px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-instant-img {
+  width: 50%;
+  position: relative;
+}
 
+.play-instant-adjust-img {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: -10%;
+  left: -15%;
+}
+.play-instant-content {
+  text-align: center;
+}
+.play-instant-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0b0223;
+}
+.play-instant-title span {
+  color: #f948b2;
+}
+.play-instant-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #534c64;
+  padding: 15px;
+}
 /* Responsive Styles */
 
 /* Responsive For Mobile Devices */
 @media screen and (max-width: 576px) {
   nav,
   ul,
-  .online-game-container {
+  .online-game-container,
+  .play-instant-container {
     flex-direction: column;
     text-align: center;
   }
   .banner-content {
     width: 100%;
     text-align: left;
-    padding-left: 50%;
+    padding-left: 15%;
   }
   nav ul li:last-child {
     width: 180px;
@@ -210,6 +246,9 @@ nav ul li .anchor {
   .banner-container {
     flex-direction: column-reverse;
     text-align: center;
+  }
+  .play-instant-img {
+    width: 95%;
   }
 }
 
@@ -222,8 +261,9 @@ nav ul li .anchor {
     text-align: center;
   }
   .banner-content {
+    width: 100%;
     text-align: left;
-    padding-left: 30%;
+    padding-left: 60%;
   }
   nav ul {
     padding-top: 20px;
