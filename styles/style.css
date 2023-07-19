@@ -36,12 +36,14 @@ nav {
 .footer-img-container img {
   height: 30px;
   width: 50px;
+  cursor: pointer;
 }
 .img-logo h2,
 .footer-img-container h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #0b0223;
+  cursor: pointer;
 }
 .img-logo span,
 .footer-img-container span {
@@ -106,6 +108,7 @@ nav ul li .anchor {
   font-weight: 500;
   color: #534c64;
   padding: 5px 0px;
+  cursor: pointer
 }
 .banner-description img {
   height: 15px;
@@ -120,6 +123,7 @@ nav ul li .anchor {
   border: none;
   border-radius: 20px;
   margin-top: 10px;
+  cursor: pointer;
 }
 .go-btn {
   background-color: #4ec5f7;
@@ -249,6 +253,7 @@ nav ul li .anchor {
   align-items: center;
   font-weight: 600;
   padding: 8px 15px;
+  cursor: pointer;
 }
 .popular-game-box:hover {
   background-color: #d3bebe;
