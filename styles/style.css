@@ -223,6 +223,36 @@ nav ul li .anchor {
   color: #534c64;
   padding: 15px;
 }
+
+.popular-game-container {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+.popular-game-box {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  padding: 8px 15px;
+}
+.popular-game-box:hover {
+  background-color: #d3bebe;
+  color: #ff42a5;
+  border-radius: 50px;
+}
+.popular-game-box img {
+  margin-right: 8px;
+  height: 50px;
+  width: 50px;
+}
+
 /* Responsive Styles */
 
 /* Responsive For Mobile Devices */
@@ -249,6 +279,22 @@ nav ul li .anchor {
   }
   .play-instant-img {
     width: 95%;
+  }
+  .popular-game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .popular-game-box {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 100;
+    padding: 5px 10px;
+    font-size: 8px;
+  }
+  .popular-game-box img {
+    margin-right: 3px;
+    height: 15px;
+    width: 15px;
   }
 }
 
