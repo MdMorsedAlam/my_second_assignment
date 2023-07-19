@@ -290,7 +290,12 @@ nav ul li .anchor {
   font-weight: 400;
   font-size: 12px;
 }
-
+.footer-description{
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  padding:30px;
+}
 /* Responsive Styles */
 
 /* Responsive For Mobile Devices */
